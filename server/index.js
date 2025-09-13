@@ -37,8 +37,7 @@ app.use(express.json())
 
 
 // MongoDatabase and Schema
-let URI = "mongodb+srv://aviraisurendra:Abhi1289@traversy.esd4bd4.mongodb.net/react_projects"
-
+let URI = process.env.MONGO_URL
 
 // models call
 const userTable = require('./modals/userModal');
