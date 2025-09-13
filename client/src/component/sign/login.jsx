@@ -32,7 +32,7 @@ export const Login = () => {
 
      else{
       setLoading(true)
-      axios.post('http://localhost:3001/api/login',{email,password})
+      axios.post('https://ecommerce-mern-website-backend-rigl.onrender.com/api/login',{email,password})
       .then(res=> {
         if(res.data.msg==0){
           setAlertMsg(prev=>{

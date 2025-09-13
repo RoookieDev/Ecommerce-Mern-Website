@@ -17,7 +17,7 @@ export const Homepage = () => {
   const token = localStorage.getItem("token")
   const navigate = useNavigate()
   useEffect(()=>{
-    axios.post("http://localhost:3001/api/JWTToken", {token},{
+    axios.post("https://ecommerce-mern-website-backend-rigl.onrender.com/api/JWTToken", {token},{
       headers:{
         Authorization:`Bearer ${token}`
       }

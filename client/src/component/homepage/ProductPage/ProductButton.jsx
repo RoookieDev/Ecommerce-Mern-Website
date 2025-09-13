@@ -14,7 +14,7 @@ export const ProductButton = ({id}) => {
   function addToCart(e){
     const productId = id
     setIsLoading(true)
-    axios.post('http://localhost:3001/api/addtocart',{productId, tokenId},{
+    axios.post('https://ecommerce-mern-website-backend-rigl.onrender.com/api/addtocart',{productId, tokenId},{
       headers:{
         Authorization:`Bearer ${tokenId}`
       }

@@ -44,7 +44,7 @@ export const Register = () => {
         }
         else{
             setIsLoading(true)
-            axios.post("http://localhost:3001/api/register", {name, email,password})
+            axios.post("https://ecommerce-mern-website-backend-rigl.onrender.com/api/register", {name, email,password})
             .then(res=> {
                 if(res.data.msg =='d'){
                 setAlertStyle(prev => {
