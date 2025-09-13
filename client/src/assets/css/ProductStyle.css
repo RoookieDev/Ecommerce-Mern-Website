@@ -1,0 +1,112 @@
+.ProductPage{
+    position: relative;
+    width: 100%;
+    padding:40px 40px;
+    background: white;
+}
+.ProductPage .productTitle{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.ProductPage .productTitle h5{
+    position: relative;
+    font-size: 1.2rem;
+    color: rgb(255, 104, 87);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: 'Montserrat',sans-serif;
+}
+.ProductPage .productTitle h1{
+    position: relative;
+    font-weight: 600;
+    color: #666;
+    text-transform: capitalize;
+}
+
+/* productTitle end here */
+
+.ProductPage .cardHolder{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.ProductPage .cardHolder .card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: none;
+    flex-direction: row;
+    background: none;
+    border-radius: 0;
+    padding: 0px;
+    text-align: center;
+}
+
+.ProductPage .cardHolder .card .prdData{
+    position: relative;
+    width: 100%;
+    background:white;
+    display: grid;
+    align-content: end;
+    border: 2px solid rgb(211, 211, 211);
+    border-radius: 20px;
+   
+}
+
+
+.ProductPage .cardHolder .card .prdData img{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    object-fit: contain;
+    margin: 10px 0;
+    margin-bottom: 20px;
+    background: none;
+    padding: 10px;
+}
+.ProductPage .cardHolder .card .prdData h6{
+    position: relative;
+    width: 100%;
+    padding: 10px 15px;
+    font-family: 'poppins',sans-serif;
+    font-weight: 400;
+}
+.ProductPage .cardHolder .card .prdData h3{
+    position: relative;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1.6rem;
+    font-family: 'Montserrat',sans-serif;
+    font-weight: 700;
+
+}
+.ProductPage .cardHolder .card .prdData button{
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: rgb(46, 46, 46);
+    color: white;
+    border-radius: 0px 0px 20px 20px;
+}
+
+.ProductPage .cardHolder .card .btnBox{
+    position: absolute;
+    width: auto;
+    height:100%;
+    right: 0;
+    background:none;
+    padding: 10px;
+}
+.ProductPage .cardHolder .card .btnBox button{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #c7c7c7;
+    background: none;
+    color:#222;
+    border-radius: 100%;
+    /* box-shadow: 1px 1px 4px rgba(0,0,0,0.3); */
+}

@@ -1,0 +1,158 @@
+.gridLayoutPage{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    background: #3e3e3e;
+}
+
+.gridLayoutPage .containers{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.gridLayoutPage .containers::after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 00%;
+    top: 0%;
+    z-index: 00;
+    filter: blur(400px);
+    background: rgb(5, 0, 142);
+}
+.gridLayoutPage .containers::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    right: 0%;
+    bottom: 0%;
+    z-index: 00;
+    filter: blur(500px);
+    background: rgb(162, 0, 54);
+}
+
+.gridLayoutPage .containers .gridBox{
+    position: relative;
+    width: 100%;
+    background: none;
+    padding: 10px;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 99;
+    
+}
+.gridLayoutPage .containers .gridBox::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+    height: 100%;
+    background: #eeeeee26;
+    border-radius: 20px;
+    backdrop-filter: blur(100px);
+}
+.gridLayoutPage .containers .gridBox:nth-child(2){
+    grid-row: 1/4;
+    grid-column: 1/3;
+    display: grid;
+    align-content: center;
+    color: white;
+}
+.gridLayoutPage .containers .gridBox:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 100%;
+    left: 0;
+    transform: translate(00%,-100%);
+    background: #eeeeee26;
+    border-radius: 30px;
+    backdrop-filter: blur(100px);
+}
+.gridLayoutPage .containers .gridBox:nth-child(2) img{
+    position: relative;
+    width: auto;
+    height: 600px;
+    object-fit: contain;
+}
+.gridLayoutPage .containers .gridBox:nth-child(2) .textBx{
+    padding: 40px;
+}
+.gridLayoutPage .containers .gridBox:nth-child(2) .textBx h1{
+    
+    font-size: 4rem;
+    font-weight: 800;
+    color: #666666;
+    font-family: 'montserrat',sans-serif;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+.gridLayoutPage .containers .gridBox:nth-child(2) .textBx h1 span{
+    font-size: 2rem;
+    font-weight: 400;
+    font-family: 'poppins',sans-serif;
+}
+.gridLayoutPage .containers .gridBox:nth-child(2) .textBx p{
+    font-size: 1.6rem;
+    font-family: 'montserrat',sans-serif;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    display: block;
+}
+.gridLayoutPage .containers .gridBox:nth-child(2) .textBx button{
+    display: none;
+}
+
+.gridLayoutPage .containers .gridBox .textBx{
+    position: relative;
+    width: 100%;
+    padding: 10px 10px;
+    color: white;
+}
+.gridLayoutPage .containers .gridBox .textBx h1{
+    position: relative;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'montserrat',sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.gridLayoutPage .containers .gridBox .textBx h1 span{
+    position: relative;
+    font-size: 1.4rem;
+    color: greenyellow;
+}
+.gridLayoutPage .containers .gridBox .textBx button{
+    position: relative;
+    width: auto;
+    padding: 10px 15px;
+    border: none;
+    background: none;
+    margin-top: 10px;
+    border-radius: 05px;
+    color: white;
+    background: rgba(0,0,0,0.1);
+}
+.gridLayoutPage .containers .gridBox .textBx button:hover{
+    background: rgba(0,0,0,0.4);
+    border-radius: 5px;
+}
+.gridLayoutPage .containers .gridBox .textBx p{
+    display: none;
+}
+.gridLayoutPage .containers .gridBox img{
+    position: relative;
+    width: 50%;
+    height: 250px;
+    object-fit: contain;
+}

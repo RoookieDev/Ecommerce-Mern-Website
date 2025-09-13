@@ -1,0 +1,145 @@
+.registerPage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    /* background: linear-gradient(#222,rgb(46, 0, 46)); */
+}
+
+.registerPage .formBx{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    display: grid;
+    align-content: center;
+    justify-items: left;
+    padding: 20px 40px;
+    color: #fff;
+}
+.registerPage .formBx form{
+    position: relative;
+    width: 100%;
+    padding: 0px;
+}
+.registerPage .formBx h5{
+    position: relative;
+    width: 100%;
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+.registerPage .formBx h1{
+    position: relative;
+    width: 100%;
+    font-weight: 700;
+    color:rgb(92, 174, 255);
+}
+.registerPage .formBx form input{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #888;
+    border-radius: 0px;
+    background: none;
+    color: white;
+}
+.registerPage .formBx form input:focus{
+    border-color: dodgerblue;
+}
+.registerPage .formBx form button{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    color: white;
+    background: dodgerblue;
+}
+.registerPage .formBx form button:hover{
+    background: rgb(0, 100, 200);
+}
+.registerPage .formBx .linkBox{
+    position: relative;
+    width: 100%;
+    padding: 00px;
+    margin-top: 20px;
+}
+.registerPage .formBx .linkBox p{
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.registerPage .formBx .linkBox a{
+    position: relative;
+    padding:5px 10px;
+    color: #777;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #777;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+.registerPage .formBx .linkBox a:hover{
+    border-color: white;
+    color: white;
+}
+
+/* formBx end here */
+
+.videoBox{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+}
+.videoBox video{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+.videoBox img{
+     position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* videoBox end here */
+
+.alertBox{
+    position: fixed;
+    width: 30%;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background: rgb(177, 1, 36);
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 10px;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    transition: 0.2s ease-in-out;
+    opacity: 0;
+    
+
+}
+.alertBox h5{
+    position: relative;
+    width: 100%;
+    font-size: 1.2rem;
+    padding:0 10px;
+    font-weight: 300;
+}
+.alertBox button{
+    position: relative;
+    padding:5px 10px;
+    border-radius: 100px;
+    border: 1.5px solid grey;
+    border: 2px solid rgb(237, 237, 237);
+    background: none;
+    color: white;
+}

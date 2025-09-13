@@ -1,0 +1,127 @@
+.navBar{
+    position: relative;
+    width: 100%;
+    background: white;
+    padding: 10px;
+}
+
+.navBar .logo{
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-content: center;
+    padding: 20px;
+}
+
+.navBar .logo h4{
+    position: relative;
+    width: 100%;
+    font-weight: 600;
+    color: #666;
+    font-size: 2rem;
+}
+
+.navBar .logo h4 i{
+    color: #333;
+}
+
+/* logo end here */
+
+
+.navBar .menuBx{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    align-content: center;
+}
+.navBar .menuBx ul{
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    list-style: none;
+    align-items: center;
+}
+.navBar .menuBx ul li{
+    position: relative;
+    width: auto;
+    padding: 10px 20px;
+    
+}
+.navBar .menuBx ul li a{
+    position: relative;
+    width: 100%;
+    color: black;
+    display: inline-block;
+    font-size: 1.1rem;
+    text-decoration: none;
+}
+.navBar .menuBx ul li a:hover{
+    color: dodgerblue;
+}
+
+/* menuBx end here */
+
+.navBar .searchBox{
+    position: relative;
+    width: 100%;
+    display: grid;
+    align-content: center;
+}
+.navBar .searchBox form{
+    position: relative;
+    width: 100%;
+    display: flex;
+    border: 1.8px solid #dadada;
+    padding: 0px;
+}
+.navBar .searchBox form input{
+    position: relative;
+    width: 100%;
+    border: none;
+    padding: 10px 15px;
+    background: none;
+}
+.navBar .searchBox form button{
+    position: relative;
+    background: none;
+    border: none;
+    padding: 5px;
+}
+/* searchBox end here */
+.navBar .buttonBox{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+}
+.navBar .buttonBox button{
+    position: relative;
+    width: auto;
+    padding:15px 20px;
+    border: none;
+    background:#333;
+    color: white;
+    border-radius: 05px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+.navBar .buttonBox button:nth-child(2){
+    background: #666;
+}
+.navBar .buttonBox button:hover{
+    background: rgb(0, 103, 207);
+}
+.navBar .buttonBox button:nth-child(2):hover{
+    background: #444;
+}
+
+.navBar .buttonBox button:nth-child(3){
+    background:whitesmoke;
+    padding:15px 25px;
+    color: black;
+}
+
+/* buttonBox end here */

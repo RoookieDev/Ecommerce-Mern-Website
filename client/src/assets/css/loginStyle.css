@@ -1,0 +1,131 @@
+.LoginPage{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+.LoginPage .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+}
+.LoginPage .imgBx img{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.LoginPage .formBx{
+    position: relative;
+    width: 100%;
+    background: #080e1a;
+    display: grid;
+    align-content: center;
+    justify-items: start;
+    padding: 10px 30px;
+    color: white;
+}
+.LoginPage .formBx h5{
+    position: relative;
+    font-weight: 300;
+    font-size: 1.4rem;
+   
+}
+.LoginPage .formBx h1{
+    position: relative;
+    width: 100%;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+}
+.LoginPage .formBx input{
+    position: relative;
+    width: 100%;
+    background: none;
+    padding: 10px;
+    border: 2px solid #999;
+    margin: 5px 0;
+    color: white;
+}
+.LoginPage .formBx input:focus{
+    border-color: #fff;
+}
+.LoginPage .formBx button{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+    background: green;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+.LoginPage .formBx button:hover{
+    background: rgb(0, 80, 0);
+}
+.LoginPage .formBx .linkBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.LoginPage .formBx .linkBox p{
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.LoginPage .formBx .linkBox a{
+  position: relative;
+    padding:5px 10px;
+    color: #777;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid #777;
+    text-transform: uppercase;
+    transition: 0.2s;
+}
+.LoginPage .formBx .linkBox a:hover{
+    border-color: white;
+    color: white;
+}
+
+.alertBox{
+    position: fixed;
+    width: 30%;
+    top: 0px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background: rgba(25, 0, 0, 0.71);
+    display: flex;
+    padding: 10px 10px;
+    border-radius: 10px;
+    gap: 20px;
+    align-items: center;
+    color: white;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    transition: 0.2s ease-in-out;
+    border: 2px solid white;
+    opacity: 0;
+
+}
+.alertBox h5{
+    position: relative;
+    width: 100%;
+    font-size: 1rem;
+    padding:0 10px;
+    font-weight: 400;
+    font-family: 'Montserrat',sans-serif;
+}
+.alertBox button{
+    position: relative;
+    padding:5px 10px;
+    border-radius: 100px;
+    border: 2px solid rgb(120, 120, 120);
+    background: none;
+    color: white;
+}
+.alertBox button:hover{
+    border-color: #fff;
+}

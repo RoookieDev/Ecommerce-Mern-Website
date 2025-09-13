@@ -1,0 +1,96 @@
+.sliderPage{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.sliderTop{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: #3e3e3e;
+}
+.sliderTop::before{
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 80%;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%,0) skew(-15deg);
+    background:  linear-gradient(#303030,#3e3e3e);
+
+}
+.sliderTop .sliderBoxTop{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+.sliderTop .sliderBoxTop .imgBx{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+.sliderTop .sliderBoxTop .imgBx img{
+    position: relative;
+    min-width: 100%;
+    height: 100vh;
+    object-fit: contain;
+}
+
+.sliderTop .sliderBoxTop .textBx{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+   scroll-behavior: smooth;
+    overflow-y: hidden;
+}
+.sliderTop .sliderBoxTop .textBx h1{
+    position: relative;
+    width: 100%;
+    min-height: 100%;
+    text-align: center;
+    display: grid;
+    align-content: center;
+    font-size: 15rem;
+    font-weight: 800;
+    color: #e7e7e7;
+}
+.sliderTop .sliderBoxTop .textBx:nth-child(3) h1{
+    color: transparent;
+    -webkit-text-stroke: #fff 3px;
+}
+
+.sliderTop .sliderBoxTop .navigateBtn{
+    display: flex;
+}
+
+.sliderPage .navigateBtn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: fit-content;
+    display: flex;
+    gap: 10px;
+    display: none;
+}
+.navigateBtn button{
+    position: relative;
+    width: auto;
+    padding: 10px 20px;
+    border: none;
+    background: rgb(230, 230, 230);
+    color: black;
+}
+.navigateBtn button:hover{
+    background: rgba(255, 255, 255, 0.718);
+    color: #333;
+}

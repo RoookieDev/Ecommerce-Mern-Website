@@ -1,0 +1,121 @@
+.contentPage{
+    position: relative;
+    width: 100%;
+    height: auto;
+    }
+.contentPage::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(0deg, rgb(231, 231, 231) 70%, white);
+    bottom:00%;
+    left: 0;
+    filter: blur(00px);
+}
+
+.contentPage .textBx{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: grid;
+    align-content: center;
+}
+.contentPage .textBx h5{
+    position: relative;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+.contentPage .textBx h5 i{
+    color: crimson;
+}
+.contentPage .textBx h1{
+    position: relative;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: 700;
+    color: #000;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.contentPage .textBx p{
+    position: relative;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+.contentPage .textBx .btnBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.contentPage .textBx .btnBx label{
+    position: relative;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+.contentPage .textBx .btnBx label h4{
+    font-weight: 800;
+     color: rgb(218, 157, 3);
+}
+
+.contentPage  .btnBx a{
+    position: relative;
+    width: auto;
+    padding: 15px;
+    background:rgb(255, 255, 255);
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.contentPage  .btnBx a:active{
+    transform: scale(0.95);
+}
+.contentPage  .btnBx a:hover{
+    background: rgb(127, 127, 127);
+    color: white;
+}
+
+
+/* textBx end here */
+
+
+
+
+.contentPage .imgBx{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+.contentPage .imgBx::before{
+    content: '';
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0%) skew(-15deg);
+    background: white;
+ 
+    
+}
+.contentPage .imgBx img{
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 95%;
+    object-fit: contain;
+}

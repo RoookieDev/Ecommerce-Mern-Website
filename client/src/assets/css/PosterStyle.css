@@ -1,0 +1,98 @@
+.posterpage{
+    position: relative;
+    width: 100%;
+    padding: 10px;
+}
+.posterpage .container::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0);
+    background: rgb(239, 239, 239);
+    border-radius: 10px;
+}
+
+.posterpage .imgBx{
+    position: relative;
+    width: 100%;
+    height: 600px;
+}
+.posterpage .imgBx img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.posterpage .textBx{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.posterpage .textBx h6{
+    position: relative;
+    width: 100%;
+    font-size: 1.2rem;
+    color: crimson;
+}
+.posterpage .textBx h1{
+    position: relative;
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.posterpage .textBx h5{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Montserrat',sans-serif;
+}
+.posterpage .textBx .timeBox{
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap:10px;
+    justify-content: center;   
+    margin-bottom: 20px;
+}
+
+.posterpage .textBx .timeBox label{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 1px 1px 4px rgba(0,00,0,0.1);
+}
+.posterpage .textBx .timeBox label span{
+    position: relative;
+    width: 100%;
+    text-transform: capitalize;
+}
+.posterpage .textBx .timeBox label span:nth-child(1){
+    font-size: 2rem;
+    font-weight: 700;
+}
+.posterpage .textBx button{
+    position: relative;
+    width: auto;
+    padding: 15px 20px;
+    border: none;
+    background: rgb(255, 103, 133);
+    color: white;
+    border-radius: 5px;
+}
+.posterpage .textBx button:hover{
+    background: crimson;
+}
