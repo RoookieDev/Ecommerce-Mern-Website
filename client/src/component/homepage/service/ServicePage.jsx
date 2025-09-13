@@ -1,7 +1,7 @@
 import React from 'react'
 
 // CSS import
-import '../../../assets/css/serviceStyle.css'
+import '../../../assets/css/ServiceStyle.css'
 import { ServiceCard } from './ServiceCard'
 
 export const ServicePage = () => {
