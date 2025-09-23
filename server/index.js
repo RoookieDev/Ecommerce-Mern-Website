@@ -22,7 +22,7 @@ require('dotenv').config()
 
 // CORS CONFIG
 app.use(cors({
-    origin:["https://ecommerce-frontend-iami.onrender.com/"],
+    origin:["https://ecommerce-frontend-iami.onrender.com"],
     methods:["POST","GET"],
     credentials:true
 
