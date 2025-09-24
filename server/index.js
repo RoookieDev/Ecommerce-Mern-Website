@@ -22,8 +22,9 @@ require('dotenv').config()
 
 // CORS CONFIG
 app.use(cors({
-    origin:["http://localhost:5173"],
+    origin:["https://ecommerce-frontend-iami.onrender.com"],
     methods:["POST","GET"],
+     headers: ["Content-Type"],
     credentials:true
 
 }))
@@ -198,25 +199,6 @@ app.post("/api/JWTToken", async(req,res)=>{
     .catch(err=> res.json(err))  
 })
 
-
-// get CartData
-// app.post("/api/getCartItem", (req,res)=>{
-//     const {token,productId} = req.body;
-//     const active_user_data = tokenData(token).userEmail;
-//     cartTable.findOne({userEmail:active_user_data})
-//     .then(userCart=>{
-//         if(userCart){
-//             if(userCart.product_name==productId){
-//                 res.send({msg:'E',id:productId})
-//             }
-//         }
-//         else{
-//             res.send({msg:'NE'})
-//         }
-//     })
-//     .catch(err=> res.send(err))
-//     // res.send({msg:token,data:active_user_data.userEmail})
-// })
 
 
 
